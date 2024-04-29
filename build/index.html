@@ -15,10 +15,10 @@
         <meta http-equiv="content-language" content="sv">
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-        <link rel="stylesheet" href="assets/css/external/reset.css?v=bbe1e8a072f86bebfbfa4e91a0d900cf" type="text/css">
-        <link rel="stylesheet" href="assets/css/external/animate.min.css?v=bbe1e8a072f86bebfbfa4e91a0d900cf" type="text/css">
-        <link rel="stylesheet" href="assets/css/reizoko.css?v=bbe1e8a072f86bebfbfa4e91a0d900cf" type="text/css">
-        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js?v=bbe1e8a072f86bebfbfa4e91a0d900cf"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/external/reset.css?v=2b8dbda91349114dd176bfd36106c5df" type="text/css">
+        <link rel="stylesheet" href="assets/css/external/animate.min.css?v=2b8dbda91349114dd176bfd36106c5df" type="text/css">
+        <link rel="stylesheet" href="assets/css/reizoko.css?v=2b8dbda91349114dd176bfd36106c5df" type="text/css">
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js?v=2b8dbda91349114dd176bfd36106c5df"></script><![endif]-->
 
 
         
@@ -51,7 +51,7 @@
 				<li><a href="#" id="photography">Photography</a></li>
 				<li><a href="#" id="all">All</a></li>
 			</ul>
-			<input id="myInput" type="text" placeholder="Search..">
+			<input id="search" type="text" placeholder="Search..">
 		</div>
 	</nav>
 	<section class="full holder-it-items">
@@ -313,14 +313,14 @@
 		</div>
 	</section>
 
-        <script defer type="text/javascript" src="assets/js/external/ofi.min.js?v=bbe1e8a072f86bebfbfa4e91a0d900cf"></script>
-        <script defer type="text/javascript" src="assets/js/index.min.js?v=bbe1e8a072f86bebfbfa4e91a0d900cf"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=bbe1e8a072f86bebfbfa4e91a0d900cf" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script defer type="text/javascript" src="assets/js/external/ofi.min.js?v=2b8dbda91349114dd176bfd36106c5df"></script>
+        <script defer type="text/javascript" src="assets/js/index.min.js?v=2b8dbda91349114dd176bfd36106c5df"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=2b8dbda91349114dd176bfd36106c5df" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
         <script>
             
             $(document).ready(function(){
-                $("#myInput").on("keyup", function() {
+                $("#search").on("keyup", function() {
                   var value = $(this).val().toLowerCase();
                   
                   $(".items").children().each(function() {
