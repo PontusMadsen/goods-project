@@ -5,7 +5,10 @@
 /node_modules
 
 # Build #
-/build
+# /build #
+
+# Read me assets #
+/readme-assets
 
 # Critical CSS #
 /criticalCSS

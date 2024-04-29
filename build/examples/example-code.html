@@ -1,0 +1,28 @@
+
+Grid stuff:
+
+@include display-grid;
+@include grid-columns(repeat(12, 1fr));
+
+@include grid-child(2,6,1,2);
+
+
+Toggle stuff with jQuery:
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js?v=bbe1e8a072f86bebfbfa4e91a0d900cf"></script>
+$( ".toggle-referal" ).click(function() {
+    event.preventDefault();
+    $( ".refer-a-friend-holder" ).toggleClass("visible");
+    $( "body" ).toggleClass("mobile-nav-toggle");
+});
+
+Animate CSS website:
+https://animate.style
+
+<script src="assets/js/external/wow.js?v=bbe1e8a072f86bebfbfa4e91a0d900cf"></script>
+<script>
+      new WOW().init();
+</script>
+
+Hamburger:
+https://github.com/jonsuh/hamburgers
