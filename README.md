@@ -6,6 +6,11 @@ Was thinking I could put this on a website, enable account creation amd then mak
 One rule. It needs to be on a subdomain called "goods".
 IE: https://goods.example.com
 
+## Usage
+Build the project with `npm install`.
+Start the project with `npm start`.
+If you're not interested in building your own project, you can just use the `build` folder and throw that on your server (after you've added you own content of course).
+
 ## Why?
 Why not?
 
