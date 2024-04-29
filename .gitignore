@@ -4,6 +4,9 @@
 # Node modules #
 /node_modules
 
+# Build #
+/build 
+
 # Read me assets #
 /readme-assets
 
