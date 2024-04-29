@@ -1,7 +1,7 @@
 {
-  "name": "white-label",
-  "version": "1.0.0",
-  "description": "Default project structure",
+  "name": "goods-project",
+  "version": "1.0.1",
+  "description": "Good Project",
   "main": "index.js",
   "scripts": {
     "start": "gulp watch",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://PontusMadsen@github.com/PontusMadsen/white-label-markup-master.git"
+    "url": "git+ssh://PontusMadsen@github.com/PontusMadsen/goods-project.git"
   },
   "author": "reizoko",
   "license": "ISC",
   "homepage": "https://www.reizoko.jp/",
   "babel": {
     "presets": [
-      "es2015"
+      "en2015"
     ]
   },
   "devDependencies": {
