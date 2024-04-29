@@ -1,171 +1,28 @@
-# Base project for markup (*no neat/bourbon*)
+# Goods project.
+I'm an obsessive compulsive and I like to make things good. I buy way too much stuff and I don't want to waste it. So I decided to make a good project. This is a project where I can add stuff I buy for my own use. For my office. To see how much money I actually waste.
 
-## First time using this repository?
-- If you do not have Node installed already, you can get it by downloading the package installer from [Node's website](https://nodejs.org/en/).
+Was thinking I could put this on a website, enable account creation amd then make people able to do this stuff for free, consolidated.. I don't know. But for now, it's free here on GitHub for you all to use on your own servers/hosting.
 
-- Then install Gulp globally:
-```
-$ sudo npm install gulp -g
-```
+One rule. It needs to be on a subdomain called "goods".
+IE: https://goods.example.com
 
-- Locate yourself into the _sites_ folder and clone the repository (not needed if you are using Tower)
-```
-$ git clone git@bitbucket.org:bigsouth/white-label-markup-kodexe.git
-```
+## Why?
+Why not?
 
+## Filter
+Filter is just based of data-attributes. Very easy. Easy peacey easy.
 
-## Creating a new project
+## Search
+The search is done with a simple javascript. It's not a search engine. It's just a search box. I'm not sure if I should call it a search engine or not. But it's a search box. I'm not the best at jQuery and AJAX, so take this with a grain of salt please.
 
-### With Tower
+## Images
+If you use images with white background, the CSS will make them look like they have a no background. Good eh? *smile* No need for big PNG images.. but I guess you're one of the cool kids that uses .webp images.
 
-- Create a new repository in [Bitbucket](https://bitbucket.org/). Preferably **without** a .gitignore or readme.md, to avoid conflicts.
-
-![New repository](readme-assets/new_rep.png)
-
-- Start Tower and clone the white-label-markup-kodexe repository to a new folder
-
-![Press Clone](readme-assets/clone.png)
-
-- Enter the repository and right click the remote origin and select **Edit connection settings...**
-
-![Edit](readme-assets/edit.png)
-
-- Change the last part of the remote URL to the created repository in Bitbucket and click 'Change'
-
-![Change](readme-assets/remote.png)
-
-- Edit the name in _package.json_ and update the _readme.md_ in your favorite code editor and commit your changes
-
-- Commit the changes and then push everything to the new repository.
-
-- Place yourself into the new repository and run the following to install all dependencies:
-```
-$ npm install
-```
-
-- Start the engine:
-```
-$ npm start
-```
+## CSS
+.scss with some home made mixins. Enjoy and move them to your own project if you want.
 
 
-### The automated way
-
-- Create a new repository in [Bitbucket](https://bitbucket.org/)
-
-- Locate yourself into the white-label-markup-kodexe folder (_sites/white-label-markup-kodexe_) and **pull** the latest changes on the master.
-
-- Run the `create_project.sh` script and enter the created repository's name. The name is found at the end of the bitbucket url.
-
-https://bitbucket.org/bigsouth/**white-label-markup-kodexe**
-
-```
-$ ./create_project.sh
-```
-
-- Locate yourself into the new folder
-```
-$ cd ../<repository name>
-```
-
-- Change the project name in the package.json file
-
-- You are now ready to go! Start the server
-```
-$ npm start
-```
-
-### Do it yourself
-
-- Create a new repository in [Bitbucket](https://bitbucket.org/)
-
-- Locate yourself into the _sites_ folder on your computer and clone the git repo to a wanted folder `<folder name>`:
-```
-$ git clone git@bitbucket.org:bigsouth/white-label-markup-kodexe.git <folder name>
-```
-
-- Enter the folder
-```
-$ cd <folder-name>
-```
-
-- Pull the latest changes:
-```
-$ git pull
-```
-
-- Change the remote to your created repository `<repository>`
-```
-$ git remote set-url origin git@bitbucket.org:bigsouth/<repository>.git
-```
-
-- Update the repository:
-```
-$ git push -f origin master
-```
-
-- Checkout a new feature branch `<branch name>`
-```
-$ git checkout -b feature/<branch name>
-```
-
-- Install all dependencies:
-```
-$ npm install
-```
-
-- Start the engine:
-```
-$ npm start
-```
-
-# Tips
-
-#### Creating a clean build
-Run the following to build a clean version of the project:
-```
-$ npm run build:clean
-```
-The output is found in _build/_
-
-
-#### Creating a clean build with critical css for all files
-```
-$ npm run build:all-critical
-```
-The output is found in _build/_ and the generated critical css in _crititcalCSS/_
-
-
-#### Deploy the build to _/clients_
-Deploy a build to a sub directory on bigsouth.se:
-```
-$ npm run deploy
-```
-
-
-#### Including templates
-Use `<include>`-tags to include other templates in the current template. The following example will include all the content found the template _tabs.html_:
-```html
-<include src="tabs.html"></include>
-```
-or, if the .twig is in same dir
-```{# Include the navigation #}
-{% include '_navigation.twig' %}
-```
-
-#### Using template variables
-Using the following templates:
-_index.html_:
-```html
-<include src="filename.html" label="Lorem ipsum dolor sit amet">
-	<input type="text" />
-</include>
-```
-_filename.html_:
-```html
-<label>@@label: @@content</label>
-```
-results in:
-```html
-<label>Lorem ipsum dolor sit amet: <input type="text" /></label>
-```
+## Inspired by 
+https://posts.cv/siddhartharun
+And
+https://posts.cv/jck

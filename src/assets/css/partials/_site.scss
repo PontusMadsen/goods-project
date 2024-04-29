@@ -60,7 +60,7 @@ body:after {
 /* Common  */
 
 a {
-    color: $pink;
+    color: $textcolor;
     text-decoration: none;
 
     @include transition(all 0.2s ease-in-out);
@@ -70,6 +70,17 @@ a {
         text-decoration: none;
     }
 }
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    opacity: 1;
+    display: inline-block !important;
+    @include transition(all 0.2s ease-in-out) ;
+}
+
 
 small {}
 

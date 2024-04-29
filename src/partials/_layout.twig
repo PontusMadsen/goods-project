@@ -45,5 +45,32 @@
 
         <script defer type="text/javascript" src="assets/js/external/ofi.min.js"></script>
         <script defer type="text/javascript" src="assets/js/index.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script>
+            
+            $(document).ready(function(){
+                $("#myInput").on("keyup", function() {
+                  var value = $(this).val().toLowerCase();
+                  
+                  $(".items").children().each(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                  })
+                });
+            });
+
+            $('ul li a').click(function() {
+                var activated = this.id;
+                if (activated != 'all') {
+                    $('.item[data-cat!="' + activated + '"]').hide('300');
+                    $('.item[data-cat="' + activated + '"]').show('300');
+                } else {
+                    $('.item').show('300');
+                }
+             });
+
+              
+
+        </script>
     </body>
 </html>
