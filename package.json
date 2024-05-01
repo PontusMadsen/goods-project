@@ -8,8 +8,7 @@
     "build ": "gulp critical",
     "build:clean": "gulp clean && gulp critical",
     "build:all-critical": "gulp clean && gulp critical-multiple",
-    "deploy-reizoko": "gulp clean && gulp build && gulp deploy-reizoko",
-    "deploy-bigsouth": "gulp clean && gulp build && gulp deploy-bigsouth",
+    "deploy-goods": "gulp clean && gulp build && gulp deploy-goods",
     "deploy-critical": "gulp clean && gulp critical && gulp deploy"
   },
   "repository": {
@@ -21,7 +20,7 @@
   "homepage": "https://www.reizoko.jp/",
   "babel": {
     "presets": [
-      "en2015"
+      "es2015"
     ]
   },
   "devDependencies": {
