@@ -6,6 +6,9 @@ Was thinking I could put this on a website, enable account creation amd then mak
 One rule. It needs to be on a subdomain called "goods".
 IE: https://goods.example.com
 
+## Preview
+Here's a copy of the latest build folder: https://goods.reizoko.jp/
+
 ## Usage
 Build the project with `npm install`.
 Start the project with `npm start`.
