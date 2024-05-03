@@ -5,7 +5,7 @@
 /node_modules
 
 # Build #
-# /build #
+/build/examples
 
 # Read me assets #
 /readme-assets

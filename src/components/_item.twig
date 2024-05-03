@@ -1,0 +1,19 @@
+{% for item in goods %}
+<div class="item" data-cat="{{ item.cat }}">
+    <div class="content">
+        <a href="{{ url }}" target="_blank">
+            {% if item.new %}<div class="new">New</div>{% endif %}
+            <div class="image"><img src="{{ item.image }}" alt=""></div>
+            <div class="text">
+                <div class="what">
+                    {{ item.company }} · {{ item.cat }}
+                </div>
+                <div class="name-price">
+                    <span>{{ item.name }}</span>
+                    <span>{{ item.price }}</span>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+{% endfor %}

@@ -10,271 +10,145 @@
 			Inventory
 			<span>of Pontus Madsen</span>
 		</div>
-		<div class="navigation">
-			<ul>
-				<li><a href="#" id="workspace">Workspace</a></li>
-				<li><a href="#" id="carry">Carry</a></li>
-				<li><a href="#" id="lifestyle">Lifestyle</a></li>
-				<li><a href="#" id="photography">Photography</a></li>
-				<li><a href="#" id="all">All</a></li>
-			</ul>
-			<input id="search" type="text" placeholder="Search..">
-		</div>
+		{% include "components/_navigation.twig" %}
+		
 	</nav>
 	<section class="full holder-it-items">
 		<div class="items">
-			<div class="item" data-cat="workspace">
-				<div class="content">
-					<a href="">
-						<div class="new">New</div>
-						<div class="image"><img src="assets/img/6629054c1cf9204302bc127c_20240424T0112-17faba17-38ba-4d8f-869f-e8c9d9afbe95.webp" alt=""></div>
-						<div class="text">
-							<div class="what">
-								Apple · Workspace
-							</div>
-							<div class="name-price">
-								<span>Vision Pro</span>
-								<span>¥550,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="carry">
-				<div class="content">
-					<a href="">
-						<div class="new">New</div>
-						<div class="image"><img src="assets/img/6629054c79310d5fd19b6512_20240424T0112-c38673ea-0845-4034-8244-e9b58bc4226d.png" alt=""></div>
-						<div class="text">
-							<div class="what">
-								Rabbit · Carry
-							</div>
-							<div class="name-price">
-								<span>r1</span>
-								<span>¥31,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="workspace">
-				<div class="content">
-					<a href="">
-						<div class="new">New</div>
-						<div class="image"><img src="assets/img/raycue.jpg" alt=""></div>
-						<div class="text">
-							<div class="what">
-								RayCue · Workspace
-							</div>
-							<div class="name-price">
-								<span>RayCue 128K Pro</span>
-								<span>¥46,500</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="workspace">
-				<div class="content">
-					<a href="">
-						<div class="new"></div>
-						<div class="image"><img src="assets/img/mac-studio-select-202306.jpg" alt=""></div>
-						<div class="text">
-							<div class="what">
-								Apple · Workspace
-							</div>
-							<div class="name-price">
-								<span>Mac Studio M2 Max</span>
-								<span>¥300,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="workspace">
-				<div class="content">
-					<a href="">
-						<div class="new"></div>
-						<div class="image">
-							<img src="assets/img/intouspromedium.webp" alt="">
-						</div>
-						<div class="text">
-							<div class="what">
-								Wacom · Workspace
-							</div>
-							<div class="name-price">
-								<span>Intuos Pro Medium</span>
-								<span>¥35,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="carry">
-				<div class="content">
-					<a href="">
-						<div class="new"></div>
-						<div class="image">
-							<img src="assets/img/iphone-pro-max-14.png" alt="">
-						</div>
-						<div class="text">
-							<div class="what">
-								Apple · Carry
-							</div>
-							<div class="name-price">
-								<span>iPhone 14 Pro Max</span>
-								<span>¥180,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="lifestyle">
-				<div class="content">
-					<a href="">
-						<div class="new"></div>
-						<div class="image">
-							<img src="assets/img/hardgraft-carry-all-bag.webp" alt="">
-						</div>
-						<div class="text">
-							<div class="what">
-								HardGraft · Lifestyle
-							</div>
-							<div class="name-price">
-								<span>Overhead Holdall Bag</span>
-								<span>¥130,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="lifestyle">
-				<div class="content">
-					<a href="">
-						<div class="new"></div>
-						<div class="image">
-							<img src="assets/img/NigelCabournLiamGallagherLongSmock.webp" alt="">
-						</div>
-						<div class="text">
-							<div class="what">
-								Nigel Cabourn · Lifestyle
-							</div>
-							<div class="name-price">
-								<span>x Liam Gallagher</span>
-								<span>¥180,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="workspace">
-				<div class="content">
-					<a href="">
-						<div class="new"></div>
-						<div class="image">
-							<img src="assets/img/keycron.jpg" alt="">
-						</div>
-						<div class="text">
-							<div class="what">
-								Keycron · Workspace
-							</div>
-							<div class="name-price">
-								<span>Mechanical Keyboard</span>
-								<span>¥12,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="workspace">
-				<div class="content">
-					<a href="">
-						<div class="new"></div>
-						<div class="image">
-							<img src="assets/img/6500492cv1d.jpg" alt="">
-						</div>
-						<div class="text">
-							<div class="what">
-								LG · Workspace
-							</div>
-							<div class="name-price">
-								<span>Utra-Wide 4K 40"</span>
-								<span>¥172,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="workspace">
-				<div class="content">
-					<a href="">
-						<div class="new"></div>
-						<div class="image">
-							<img src="assets/img/lg_ultrafine.png" alt="">
-						</div>
-						<div class="text">
-							<div class="what">
-								LG · Workspace
-							</div>
-							<div class="name-price">
-								<span>UltraFine 5K 27"</span>
-								<span>¥200,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="carry">
-				<div class="content">
-					<a href="">
-						<div class="new"></div>
-						<div class="image"><img src="assets/img/airpodsmac.png" alt=""></div>
-						<div class="text">
-							<div class="what">
-								Apple · Carry
-							</div>
-							<div class="name-price">
-								<span>AirPods Max</span>
-								<span>¥85,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="carry">
-				<div class="content">
-					<a href="">
-						<div class="new"></div>
-						<div class="image"><img src="assets/img/airpodspro.png" alt=""></div>
-						<div class="text">
-							<div class="what">
-								Apple · Carry
-							</div>
-							<div class="name-price">
-								<span>AirPods Pro v2</span>
-								<span>¥38,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="item" data-cat="workspace">
-				<div class="content">
-					<a href="">
-						<div class="new"></div>
-						<div class="image"><img src="assets/img/macmini_old.png" alt=""></div>
-						<div class="text">
-							<div class="what">
-								Apple · Workspace
-							</div>
-							<div class="name-price">
-								<span>Mac Mini (intel)</span>
-								<span>¥95,000</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
+
+			{% include 'components/_item.twig' with 
+			{
+				goods: 
+				[
+					{
+					new: true,
+					image: 'assets/img/6629054c1cf9204302bc127c_20240424T0112-17faba17-38ba-4d8f-869f-e8c9d9afbe95.webp',
+					company:'Apple',
+					cat: 'Workspace',
+					name: 'Vision Pro',
+					price: '¥550,000',
+					url: 'https://www.google.com',
+					},
+					{
+					new: true,
+					image: 'assets/img/6629054c79310d5fd19b6512_20240424T0112-c38673ea-0845-4034-8244-e9b58bc4226d.png',
+					company:'Rabbit',
+					cat: 'Carry',
+					name: 'r1',
+					price: '¥31,000',
+					url: 'https://www.google.com',
+					},
+					{
+					new: true,
+					image: 'assets/img/raycue.jpg',
+					company:'RayCue',
+					cat: 'Workspace',
+					name: 'RayCue 128K Pro',
+					price: '¥46,500',
+					url: 'https://www.google.com',
+					},
+					{
+					new: false,
+					image: 'assets/img/mac-studio-select-202306.jpg',
+					company:'Apple',
+					cat: 'Workspace',
+					name: 'Mac Studio M2 Max',
+					price: '¥300,000',
+					url: 'https://www.google.com',
+					},
+					{
+					new: false,
+					image: 'assets/img/intouspromedium.webp',
+					company:'Wacom',
+					cat: 'Workspace',
+					name: 'Intuos Pro Medium',
+					price: '¥35,000',
+					url: 'https://www.google.com',
+					},
+					{
+					new: false,
+					image: 'assets/img/iphone-pro-max-14.png',
+					company:'Apple',
+					cat: 'Carry',
+					name: 'iPhone 14 Pro Max',
+					price: '¥180,000',
+					url: 'https://www.google.com',
+					},
+					{
+					new: false,
+					image: 'assets/img/hardgraft-carry-all-bag.webp',
+					company:'HardGraft',
+					cat: 'Lifestyle',
+					name: 'Overhead Holdall Bag',
+					price: '¥130,000',
+					url: 'https://www.google.com',
+					},
+					{
+					new: false,
+					image: 'assets/img/NigelCabournLiamGallagherLongSmock.webp',
+					company:'Nigel Cabourn',
+					cat: 'Lifestyle',
+					name: 'x Liam Gallagher',
+					price: '¥180,000',
+					url: 'https://www.google.com',
+					},
+					{
+					new: false,
+					image: 'assets/img/keycron.jpg',
+					company:'Keycron',
+					cat: 'Workspace',
+					name: 'Mechanical Keyboard',
+					price: '¥12,000',
+					url: 'https://www.google.com',
+					},
+					{
+					new: false,
+					image: 'assets/img/6500492cv1d.jpg',
+					company:'LG',
+					cat: 'Workspace',
+					name: 'Utra-Wide 4K 40"',
+					price: '¥172,000',
+					url: 'https://www.google.com',
+					},
+					{
+					new: false,
+					image: 'assets/img/lg_ultrafine.png',
+					company:'LG',
+					cat: 'Workspace',
+					name: 'UltraFine 5K 27"',
+					price: '¥200,000',
+					url: 'https://www.google.com',
+					},
+					{
+					new: false,
+					image: 'assets/img/airpodsmac.png',
+					company:'Apple',
+					cat: 'Carry',
+					name: 'AirPods Max',
+					price: '¥85,000',
+					url: 'https://www.google.com',
+					},
+					{
+					new: false,
+					image: 'assets/img/airpodspro.png',
+					company:'Apple',
+					cat: 'Carry',
+					name: 'AirPods Pro v2',
+					price: '¥38,000',
+					url: 'https://www.google.com',
+					},
+					{
+					new: false,
+					image: 'assets/img/macmini_old.png',
+					company:'Apple',
+					cat: 'Workspace',
+					name: 'Mac Mini M1',
+					price: '¥95,000',
+					url: 'https://www.google.com',
+					}
+				],
+				}
+			%} 
 
 
 		</div>
